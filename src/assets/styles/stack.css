@@ -1,0 +1,28 @@
+.heading{
+    margin: 1em auto;
+    font-size: var(--fs-800);
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+.wrapper{
+    position: relative;
+    width: max-content;
+    margin: 2em auto;
+}
+.underline{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 60%;
+    height: 4px;
+    background: var(--green500alpha40);
+}
+.info{
+    width: 90%;
+    margin: 2em auto;
+}
+.info p{
+    margin: 1em;
+    padding: 1em 0;
+}
