@@ -143,6 +143,11 @@ a{
   }
 }
 
+.active-page{
+  text-decoration: underline;
+  font-weight: 500;
+}
+
 
 @media screen and (min-width: 600px ) {
  .container{

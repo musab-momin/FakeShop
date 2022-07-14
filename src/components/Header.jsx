@@ -10,7 +10,6 @@ const Header =()=>{
     const navList = useRef(null)
 
     const toggleNav = ()=>{
-        console.log(navList.current.classList);
         navList.current.classList.toggle('active')
     }
 
@@ -25,9 +24,9 @@ const Header =()=>{
                 </button>
             </div>
             <ul className="header__pages" ref={navList}>
-                <li> <NavLink to={'/'}> Home </NavLink></li>
-                <li> <NavLink to={'/stack'}> Stack </NavLink></li>
-                <li> <NavLink to={'/about'}> About </NavLink></li>
+                <li> <NavLink to={'/'} className={(ele)=>ele.isActive ? 'active-page' : ''} > Home </NavLink></li>
+                <li> <NavLink to={'/stack'} className={(ele)=>ele.isActive ? 'active-page' : ''} > Stack </NavLink></li>
+                <li> <NavLink to={'/about'} className={(ele)=>ele.isActive ? 'active-page' : ''} > About </NavLink></li>
             </ul>
         </header>
     )
