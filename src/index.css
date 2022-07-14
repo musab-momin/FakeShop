@@ -52,6 +52,7 @@
   --purple500alpha30: #dbd4ef;
 
   /* font-sizes */
+  --fs-900: 3rem;
   --fs-800: 2rem;
   --fs-700: 1.5rem;
   --fs-600: 1rem;
@@ -125,8 +126,27 @@ a{
 }
 
 
+.loader{
+  font-size: var(--fs-800);
+  text-align: center;
+  margin: 5em auto;
+  letter-spacing: 2px;
+  animation: loader 1s linear infinite alternate;
+}
+
+@keyframes loader {
+  from{
+      opacity: 0;
+  }
+  to{
+      opacity: 1;
+  }
+}
+
+
 @media screen and (min-width: 600px ) {
  .container{
   width: 80%;
  }
 }
+

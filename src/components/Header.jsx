@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import Logo from '../assets/logo.png';
-import {NavLink} from 'react-router-dom'
+import {NavLink, Link} from 'react-router-dom'
 import {GiHamburgerMenu} from 'react-icons/gi'
 
 
@@ -17,7 +17,9 @@ const Header =()=>{
     return(
         <header className="header flex">
             <div className="header__logo-div">
+                <Link to={"/"}>
                 <img src={ Logo } alt="#" className="logo-img" />
+                </Link>
                 <button className="nav-btn" onClick={toggleNav}>
                     <GiHamburgerMenu size={25}/>
                 </button>
